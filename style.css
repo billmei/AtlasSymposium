@@ -8,20 +8,51 @@ Green  #BCDE15
 
 */
 
+body {
+    padding: 0;
+}
+
+.container-fluid {
+    padding: 0;
+    background-color: #eee;
+}
+
 .hero-unit {
     background-image: url('img/header.jpg');
     background-position: center;
+    background-repeat: no-repeat;
+    -webkit-border-radius: 0px;
+       -moz-border-radius: 0px;
+            border-radius: 0px;
 }
 
 #big-quote {
+    text-align: center;
+    padding-bottom:20px;
     color: #fff;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 50px;
     font-weight: bold;
+    text-shadow: 2px 3px 0px #000;
+    line-height: 150%;
+}
+
+#main-logo {
+    display: inline;
+    padding: 30px 100px;
 }
 
 #register-button {
-    
+    text-align: center;
+}
+
+#email-field {
+    display: none;
+    margin: 20px 10px;
+}
+
+#email-submit {
+    margin: 20px 10px;
 }
 
 #label-hider {
@@ -34,7 +65,7 @@ Green  #BCDE15
 
 /* The first child is the "question" on each F.A.Q. item */
 #faq li p:first-child {
-    color: blue;
+    color: #44AFD1;
     font-weight: bold;
     margin-bottom: -2px;
 }
