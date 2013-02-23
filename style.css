@@ -1,0 +1,52 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:700);
+
+/*
+
+Orange #f96a1b
+Blue   #44AFD1
+Green  #BCDE15
+
+*/
+
+.hero-unit {
+    background-image: url('img/header.jpg');
+    background-position: center;
+}
+
+#big-quote {
+    color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#register-button {
+    
+}
+
+#label-hider {
+
+}
+
+#faq {
+    list-style-type: none;
+}
+
+/* The first child is the "question" on each F.A.Q. item */
+#faq li p:first-child {
+    color: blue;
+    font-weight: bold;
+    margin-bottom: -2px;
+}
+
+#footer {
+    background-color: #000;
+    color: #eee;
+}
+
+.btn-large {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    padding: 20px 50px;
+    font-size: 26px;
+}
+
