@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="bootstrap.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="font/fontawesome.css">
     <link rel="stylesheet" href="style.css">
     <noscript><link rel="stylesheet" href="nojs.css"></noscript>
 </head>
@@ -15,15 +16,34 @@
     <div class="container-fluid">
         <div class="navbar navbar-fixed-top navbar-inverse">
             <div class="navbar-inner">
-                <ul class="nav">
-                    <li><a href="#header">Register Now</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#speakers">Speakers</a></li>
-                    <li><a href="#sponsors">Sponsors</a></li>
-                    <li><a href="#location">Location</a></li>
-                    <li><a href="#faq">F.A.Q.</a></li>
-                    <li><a href="#contactModal" data-toggle="modal" data-target="#contactModal">Contact</a></li>
-                </ul>
+                <div class="container">
+                    <!-- Responsive Navbar -->
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                    </a>
+
+                    <ul class="nav">
+                        <li><a id="navRegister" href="#registerModal" data-toggle="modal" data-target="#registerModal">Register Now</a></li>
+                    </ul>
+
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#speakers">Speakers</a></li>
+                            <li><a href="#sponsors">Sponsors</a></li>
+                            <li><a href="#location">Location</a></li>
+                            <li><a href="#faq">F.A.Q.</a></li>
+                        </ul>
+                    <ul class="nav pull-right">
+                        <li id="facebookNav"><a href="http://facebook.com/AtlasSymposium" target="_blank"><i class="icon-facebook-sign icon-large"></i><span id="facebookText">&nbsp;Like Us On Facebook</span></a></li>
+                        <li id="twitterNav"><a href="http://twitter.com/AtlasSymposium" target="_blank"><i class="icon-twitter icon-large"></i><span id="twitterText">&nbsp;Follow @AtlasSymposium</span></a></li>
+                        <li><a href="#contactModal" data-toggle="modal" data-target="#contactModal">Contact</a></li>
+                    </ul>
+                    </div>
+
+                </div>
             </div>
         </div>
 
@@ -31,10 +51,12 @@
             <div class="span10 offset1">
                 <h2 class="big-quote">The best place to get information on universities</h2>
                 <div class="span4">
-                    <img src="img/main-logo.png" alt="Atlas Symposium" />
+                    <img id="main-logo" src="img/main-logo.png" alt="Atlas Symposium" />
+                    <a href="http://facebook.com/AtlasSymposium" target="_blank" class="btn btn-mini"><i class="icon-facebook-sign"></i> Like us on Facebook</a>
+                    <a href="http://twitter.com/AtlasSymposium" target="_blank" class="btn btn-mini"><i class="icon-twitter"></i> Follow @AtlasSymposium</a>
                 </div>
                 <div class="span4">
-                    <button type="button" id="register-button" class="btn btn-warning btn-large" data-toggle="modal" data-target="#registerModal">Register Now</button>
+                    <button type="button" class="btn btn-warning btn-large register-button" data-toggle="modal" data-target="#registerModal">Register Now</button>
                     <hr>
                     <p id="procrastinate">Register Later</p>
                     <input type="text" id="email-field" placeholder="email@example.com"><button id="email-submit" class="btn btn-primary">Remind me via email</button>
@@ -187,7 +209,7 @@
         <div class="row-fluid">
             <div class="span6 offset3">
                 <h2 class="big-quote">Get the honest answers to your questions</h2>
-                <button type="button" id="register-button" class="btn btn-warning btn-large" data-toggle="modal" data-target="#registerModal">Register Now</button>
+                <button type="button" class="btn btn-warning btn-large register-button" data-toggle="modal" data-target="#registerModal">Register Now</button>
                 <p style="padding-bottom:60px;"></p>
             </div>
         </div>

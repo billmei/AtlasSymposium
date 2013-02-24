@@ -44,6 +44,20 @@ p {
     line-height: 130%;
 }
 
+#navbar-inner > div > ul > li {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#navRegister {
+    font-weight: bold;
+    color: #fff !important;
+}
+
+#navRegister:hover {
+    text-shadow: 0 0 4px #eee;
+}
+
 #header {
     padding-top:60px;
 }
@@ -63,11 +77,31 @@ p {
     line-height: 150%;
 }
 
-#register-button {
+#main-logo {
+    margin-bottom: 40px;
+}
+
+.icon-facebook-sign {
+    color: #3b5998;
+}
+
+.icon-twitter {
+    color: #00ACED;
+}
+
+#facebookText, #twitterText {
+    display: none;
+}
+
+.register-button {
     padding: 20px 0;
     width: 100%;
     font-size: 26px;
     text-align: center;
+}
+
+.register-button:hover {
+    box-shadow: 0 0 5px #f96a1b;
 }
 
 hr {
