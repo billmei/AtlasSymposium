@@ -17,68 +17,154 @@ body {
     background-color: #eee;
 }
 
-
-.hero-unit {
-    background-image: url('img/header.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-border-radius: 0px;
-       -moz-border-radius: 0px;
-            border-radius: 0px;
+.row-fluid {
+    width: 100%;
 }
 
-#big-quote {
+.span3, .span4, .span6, .span8 {
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 22px;
+    text-shadow: 1px 1px 2px #44AFD1;
+    line-height: 120%;
+}
+
+p {
+    font-size: 120%;
+    line-height: 130%;
+}
+
+#header {
+    padding-top:60px;
+}
+
+#offscreen {
+    text-indent: -9999px;
+}
+
+.big-quote {
     text-align: center;
     padding-bottom:20px;
-    color: #fff;
+    color: #000;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 50px;
     font-weight: bold;
-    text-shadow: 2px 3px 0px #000;
+    text-shadow: 2px 3px 0px #fff;
     line-height: 150%;
 }
 
-#main-logo {
-    display: inline;
-    padding: 30px 100px;
+#register-button {
+    padding: 20px 0;
+    width: 100%;
+    font-size: 26px;
+    text-align: center;
 }
 
-#register-button {
+hr {
+    color: #999;
+    background-color: #999;
+    height: 1px;
+}
+
+#procrastinate {
+    font-size: 18px;
+    font-weight: bold;
     text-align: center;
 }
 
 #email-field {
     display: none;
-    margin: 20px 10px;
+    width: 300px;
 }
 
 #email-submit {
-    margin: 20px 10px;
+    padding: 5px 0;
+    width: 100%;
+    margin: 0 10px 0 0;
 }
 
-#label-hider {
-
+#logistics {
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    background-color: #bbb;
+    -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+            border-radius: 10px;
 }
 
-#faq-body {
+#logistics strong {
+    display: block;
+    font-size: 24px;
+    text-shadow: 0 1px 0 #eee;
+    padding-bottom: 20px;
+}
+
+#logistics > a {
+    font-weight: bold;
+    color: #1240ab;
+}
+
+#big-photo {
+    background-image: url('img/big-photo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 350px;
+}
+
+#two-panellists {
+    background-image: url('img/two-panellists.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 350px;
+}
+
+#faq > div > ul {
     list-style-type: none;
 }
 
 /* The first child is the "question" on each F.A.Q. item */
-#faq-body li p:first-child {
+#faq > div > ul > li p:first-child {
     color: #44AFD1;
     font-weight: bold;
-    margin-bottom: -2px;
+    margin-bottom: -1px;
+}
+
+#audience {
+    background-image: url('img/audience.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 350px;
 }
 
 #footer {
     background-color: #000;
     color: #eee;
+    padding: 4px 0 4px 0;
 }
 
-.btn-large {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    padding: 20px 50px;
-    font-size: 26px;
+#footer a {
+    float: left;
+    padding: 0 20px;
+    display: inline;
 }
 
+#footer p {
+    float: right;
+    font-size: 14px;
+    padding: 0 20px;
+    display: inline;
+}
