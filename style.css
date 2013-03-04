@@ -118,7 +118,8 @@ hr {
 
 #email-field {
     display: none;
-    width: 300px;
+    width: 100%;
+    min-width: 0px;
 }
 
 #email-submit {
@@ -149,6 +150,14 @@ hr {
     color: #1240ab;
 }
 
+/* The person who said a testimonial */
+.citation {
+    text-align: center;
+    font-style: italic;
+    margin-top: -20px;
+    margin-bottom: 60px;
+}
+
 #big-photo {
     background-image: url('img/big-photo.jpg');
     background-position: center;
@@ -157,9 +166,17 @@ hr {
     height: 350px;
 }
 
-#two-panellists {
-    background-image: url('img/two-panellists.jpg');
-    background-position: top;
+#speaker-lineup {
+    background-image: url('img/speaker-lineup.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 350px;
+}
+
+#laptop-computer {
+    background-image: url('img/laptop-computer.jpg');
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 350px;
