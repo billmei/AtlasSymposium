@@ -116,8 +116,15 @@ hr {
     text-align: center;
 }
 
-#email-field {
+.js #email-field {
     display: none;
+}
+
+#email-field {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 14px 6px;
     width: 100%;
     min-width: 0px;
 }
