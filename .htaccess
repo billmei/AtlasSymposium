@@ -1,0 +1,9 @@
+ErrorDocument 400 http://www.atlassymposium.org/400.html
+ErrorDocument 401 http://www.atlassymposium.org/401.html
+ErrorDocument 403 http://www.atlassymposium.org/403.html
+ErrorDocument 404 http://www.atlassymposium.org/404.html
+ErrorDocument 500 http://www.atlassymposium.org/500.html
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
