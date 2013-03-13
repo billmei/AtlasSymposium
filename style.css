@@ -35,13 +35,25 @@ h3 {
 
 h4 {
     font-size: 22px;
-    text-shadow: 1px 1px 2px #44AFD1;
+    color: #44AFD1;
     line-height: 120%;
 }
 
 p {
     font-size: 120%;
     line-height: 130%;
+}
+
+/* Responsive navbar, increase padding for phones */
+
+@media (max-width: 979px) {
+    .container {
+       margin: 0 20px;
+    }
+
+    #header {
+        padding: 0 !important;
+    }
 }
 
 #navbar-inner > div > ul > li {
@@ -64,17 +76,6 @@ p {
 
 #offscreen {
     text-indent: -9999px;
-}
-
-.big-quote {
-    text-align: center;
-    padding-bottom:20px;
-    color: #000;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 50px;
-    font-weight: bold;
-    text-shadow: 2px 3px 0px #fff;
-    line-height: 150%;
 }
 
 #main-logo {
@@ -157,6 +158,17 @@ hr {
     color: #1240ab;
 }
 
+.big-quote {
+    text-align: center;
+    padding-bottom:20px;
+    color: #000;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 2px 3px 0 #fff;
+    line-height: 150%;
+}
+
 /* The person who said a testimonial */
 .citation {
     text-align: center;
@@ -164,6 +176,11 @@ hr {
     margin-top: -20px;
     margin-bottom: 60px;
 }
+
+.shadow-emphasis {
+    text-shadow: 2px 2px 1px #44AFD1;
+}
+
 
 #big-photo {
     background-image: url('img/big-photo.jpg');
