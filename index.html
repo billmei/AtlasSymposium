@@ -1,17 +1,18 @@
 <!doctype html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
-  xmlns:og="http://ogp.me/ns#">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Atlas Symposium | Annual conference providing high school delegates interested in business with straightforward, jargon-free answers to their questions about university</title>
     <meta name="description" content="Atlas Symposium is an annual conference that provides high school delegates interested in business with straightforward, jargon-free answers to their questions about university.">
     <meta name="keywords" content="Atlas Symposium,Atlas,AS,Symposium,Education,University,University Information,Post-Secondary,University Opinions,University Reviews,Honest Answers,Campus Ratings,School Rankings,Post-Secondary Rankings">
-    <meta property="og:image" content="http://atlassymposium.org/img/main-logo.png" /> <!-- Thumbnail for Facebook -->
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap-responsive.min.css">
-    <link rel="stylesheet" href="font/fontawesome.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="image_src" href="img/main-logo.png" /> <!-- Thumbnail for Facebook -->
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap-responsive.min.css" />
+    <link rel="stylesheet" href="font/fontawesome.css" />
+    <link rel="stylesheet" href="style.css" />
+    <noframes><link rel="stylesheet" href="noframes.css" /></noframes>
     <script>
         // appends a JS class to everything when javascript is enabled.
         document.getElementsByTagName('html')[0].className += 'js';
@@ -64,7 +65,10 @@
                     <button type="button" class="btn btn-warning btn-large register-button" data-toggle="modal" data-target="#registerModal">Register Now</button>
                     <hr/>
                     <p id="procrastinate">Register Later</p>
-                    <input type="email" id="email-field" placeholder="email@example.com"><button id="email-submit" class="btn btn-primary">Remind me via email</button>
+                    <form action="http://kortaggio.us2.list-manage.com/subscribe/post?u=1ce577b697f10829b9ec5574f&amp;id=7c6f7d7924" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <input type="email" value="" name="EMAIL" class="required email" id="email-field" placeholder="email@example.com">
+                        <input type="submit" value="Remind me via email" name="subscribe" id="email-submit" class="btn btn-primary">
+                    </form>
                 </div>
                 <div id="logistics" class="span3">
                     <!-- <strong>November 2X, 2013</strong>
@@ -93,12 +97,12 @@
 
         <div class="row-fluid">
             <div class="span10 offset1">
-                <h2 class="big-quote">&ldquo;It's not easy to come by a chance like this&rdquo;</h2>
-                <p class="citation">~&nbsp;Shirley Zhu, delegate at Atlas 2011</p>
                 <!-- <h2 class="big-quote">&ldquo;Definitely not an opportunity to miss out on.&rdquo;</h2>
                 <p class="citation">~&nbsp;Ayesha Afridi, delegate at Atlas 2011</p> -->
                 <h2 class="big-quote">&ldquo;A fun yet educational and very informative evening.&rdquo;</h2>
                 <p class="citation">~&nbsp;Kulani Zwane, delegate at Atlas 2011</p>
+                <h2 class="big-quote">&ldquo;It's not easy to come by an [opportunity] like this&rdquo;</h2>
+                <p class="citation">~&nbsp;Shirley Zhu, delegate at Atlas 2011</p>
             </div>
         </div>
 
@@ -195,8 +199,9 @@
             <div class="offset5">
             <h2>Location</h2>
             </div>
-            <noframes><img id="alt-map-img" src="img/map.jpg" alt="The location of this year's university will be at OCAD university. 100 McCaul Street, Toronto, ON, M5T 1W1"></noframes>
-            <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=ocad&amp;sll=43.656877,-79.32085&amp;sspn=0.536521,1.352692&amp;t=m&amp;ie=UTF8&amp;hq=ocad&amp;ll=43.663332,-79.391254&amp;spn=0.008383,0.021136&amp;z=14&amp;iwloc=A&amp;cid=9667773230772056803&amp;output=embed"></iframe>
+            <noframes><img id="large-map-img" src="img/large-map.png" alt="The location of this year's university will be at OCAD university. 100 McCaul Street, Toronto, ON, M5T 1W1" /></noframes>
+            <img id="small-map-img" src="img/small-map.png" alt="The location of this year's university will be at OCAD university. 100 McCaul Street, Toronto, ON, M5T 1W1" />
+            <iframe id="map-frame" width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=ocad&amp;sll=43.656877,-79.32085&amp;sspn=0.536521,1.352692&amp;t=m&amp;ie=UTF8&amp;hq=ocad&amp;ll=43.663332,-79.391254&amp;spn=0.008383,0.021136&amp;z=14&amp;iwloc=A&amp;cid=9667773230772056803&amp;output=embed"></iframe>
         </div>
 
         <div id="faq" class="row-fluid">
@@ -249,7 +254,14 @@
             <h3>Register for Atlas Symposium 2013</h3>
         </div>
         <div class="modal-body">
-            <p>Registration stuff goes here</p>
+            <form action="http://kortaggio.us2.list-manage.com/subscribe/post?u=1ce577b697f10829b9ec5574f&amp;id=7c6f7d7924" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <h4>Registration opening soon!</h4>
+                <p>Be the first to know when ticket sales are open:</p>
+                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="email@example.com">
+                <div class="clear">
+                <input type="submit" value="Remind me via email" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">
+                </div>
+            </form>
         </div>
         <div class="modal-footer">
             <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
@@ -284,6 +296,14 @@
     <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+
+    <script>
+        var _gaq=[['_setAccount','UA-10730961-9'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+
 </body>
 
 </html>

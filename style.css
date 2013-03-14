@@ -44,18 +44,6 @@ p {
     line-height: 130%;
 }
 
-/* Responsive navbar, increase padding for phones */
-
-@media (max-width: 979px) {
-    .container {
-       margin: 0 20px;
-    }
-
-    #header {
-        padding: 0 !important;
-    }
-}
-
 #navbar-inner > div > ul > li {
     padding-left: 20px;
     padding-right: 20px;
@@ -206,6 +194,17 @@ hr {
     height: 350px;
 }
 
+#large-map-img {
+    display: none;
+    height: 350px;
+    width: 1366px;
+    text-align: center;
+}
+
+#small-map-img {
+    display: none;
+}
+
 #faq > div > ul {
     list-style-type: none;
 }
@@ -242,4 +241,32 @@ hr {
     font-size: 14px;
     padding: 0 20px;
     display: inline;
+}
+
+@media (max-width: 979px) {
+    /* Fixed padding for responsive navbar */
+    .container {
+       margin: 0 20px;
+    }
+
+    #header {
+        padding: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Make size for quotes smaller on mobile */
+    .big-quote {
+        font-size: 26px;
+        text-shadow: 1px 1px 0 #fff;
+    }
+
+    /* Switch from frame to image on mobile */
+    #small-map-img {
+        display: block;
+    }
+
+    #map-frame {
+        display: none;
+    }
 }

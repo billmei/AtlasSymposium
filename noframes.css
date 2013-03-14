@@ -1,0 +1,5 @@
+/* Custom stylesheet fallback for noframes, loads an image of a map instead of a frame to Google Maps */
+
+#large-map-img {
+    display: block !important;
+}

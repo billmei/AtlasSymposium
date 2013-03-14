@@ -1,6 +1,6 @@
 $('#email-submit').on('mouseover', function() {
     $('#email-field').show(50);
-    $('#email-submit').text('Send me an email reminder')
+    $('#email-submit').val('Send me an email reminder')
 });
 
 $('#facebookNav').on('mouseenter', function(){
