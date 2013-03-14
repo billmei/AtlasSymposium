@@ -59,7 +59,7 @@ p {
 }
 
 #header {
-    padding-top:60px;
+    padding-top: 60px;
 }
 
 #offscreen {
@@ -80,6 +80,10 @@ p {
 
 #facebookText, #twitterText {
     display: none;
+}
+
+#top-form {
+    margin: 0;
 }
 
 .register-button {
