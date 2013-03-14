@@ -1,0 +1,12 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Bill Mei -- @kortaggio
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    Bootstrap, Font Awesome
+    jQuery
