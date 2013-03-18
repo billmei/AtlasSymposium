@@ -249,8 +249,8 @@ hr {
 
 @media (max-width: 979px) {
     /* Fixed padding for responsive navbar */
-    .container {
-       margin: 0 20px;
+    .navbar-fixed-top {
+        margin: 0;
     }
 
     #header {
