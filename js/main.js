@@ -16,3 +16,9 @@ $('#twitterNav').on('mouseenter', function(){
         $('#twitterText').hide(50);
     });
 });
+
+// Tooltips for abbreviations
+
+$('#SAF').tooltip({"placement":"bottom"});
+$('#TRSM').tooltip({"placement":"bottom"});
+$('#BBA').tooltip({"placement":"bottom"});
