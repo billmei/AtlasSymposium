@@ -3,8 +3,8 @@
 /*
 
 Orange #f96a1b
-Blue   #44AFD1
-Green  #BCDE15
+Blue   #44afd1
+Green  #bcde15
 
 */
 
@@ -44,14 +44,14 @@ p {
     line-height: 130%;
 }
 
-#navbar-inner > div > ul > li {
-    padding-left: 20px;
-    padding-right: 20px;
+.nav-container {
+    width: 80%;
+    margin: 0 auto 0 auto;
 }
 
 #navRegister {
     font-weight: bold;
-    color: #fff !important;
+    color: #fff;
 }
 
 #navRegister:hover {
@@ -256,6 +256,10 @@ hr {
     #header {
         padding: 0;
     }
+
+    .nav-container {
+        width: 100%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -272,5 +276,10 @@ hr {
 
     #map-frame {
         display: none;
+    }
+
+    /* Display text in nav */
+    #facebookText, #twitterText {
+        display: inline;
     }
 }
