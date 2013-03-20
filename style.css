@@ -8,6 +8,10 @@ Green  #bcde15
 
 */
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     padding: 0;
 }
