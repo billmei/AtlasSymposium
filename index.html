@@ -326,27 +326,27 @@
         <div class="control-group">
           <label for="mce-PHONE" class="control-label">Phone Number</label>
           <div class="controls">
-          <input type="text" name="PHONE" class="" value="" id="mce-PHONE" placeholder="Phone Number">
+          <input type="text" name="PHONE" class="input-medium" value="" id="mce-PHONE" placeholder="###-###-####">
+          <div class="input-prepend">
+            <span class="add-on">ext</span>
+            <input type="number" name="PHONEEXT" class="input-mini" value="" id="mce-PHONEEXT" placeholder="###">
+          </div>
           </div>
         </div>
         <div class="control-group">
-          <label for="mce-PHONEEXT" class="control-label">Phone Extension</label>
           <div class="controls">
-          <input type="number" name="PHONEEXT" class="" value="" id="mce-PHONEEXT" placeholder="Extension">
+            <p>What's the best way to contact you?</p>
+            <select name="CONTMETHOD" id="mce-CONTMETHOD">
+              <option value="Email" id="mce-CONTMETHOD-0">Email</option>
+              <option value="Phone" id="mce-CONTMETHOD-1">Phone</option>
+            </select>
           </div>
-        </div>
-        <div class="control-group">
-          <p>What's the best way to contact you?</p>
-          <input type="radio" value="Email" name="CONTMETHOD" id="mce-CONTMETHOD-0">
-          <label for="mce-CONTMETHOD-0">Email</label>
-          <input type="radio" value="Phone" name="CONTMETHOD" id="mce-CONTMETHOD-1">
-          <label for="mce-CONTMETHOD-1">Phone</label>
         </div>
         <input type="radio" value="Teacher" name="ROLE" id="mce-ROLE-1" class="hidden" checked>
         <div style="position: absolute; left: -5000px;"><input type="text" name="b_1ce577b697f10829b9ec5574f_7c6f7d7924" tabindex="-1" value=""></div>
         <div class="control-group">
           <div class="controls">
-          <input type="submit" value="Remind me via email" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">
+          <input type="submit" value="Remind me via email" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary teacher-submit">
           </div>
         </div>
       </form>

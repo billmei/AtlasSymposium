@@ -1,9 +1,8 @@
-$('#email-submit').on('mouseover', function() {
-    $('#email-field').show(50);
-    $('#email-submit').val('Send me an email reminder');
-});
-
 // Tooltips for abbreviations
 $('#SAF').tooltip({"placement":"bottom"});
 $('#TRSM').tooltip({"placement":"bottom"});
 $('#BBA').tooltip({"placement":"bottom"});
+
+$('#mce-CONTMETHOD').on('change', function() {
+    $('#mc-embedded-subscribe.teacher-submit').val('Remind me via ' + $(this).val().toLowerCase());
+});
