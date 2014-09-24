@@ -62,8 +62,8 @@ p {
     padding-top: 60px;
 }
 
-#offscreen {
-    text-indent: -9999px;
+.offscreen {
+    position: absolute; left: -5000px;
 }
 
 #main-logo {
@@ -104,31 +104,6 @@ hr {
     color: #999;
     background-color: #999;
     height: 1px;
-}
-
-#procrastinate {
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-}
-
-.js #email-field {
-    display: none;
-}
-
-#email-field {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 14px 6px;
-    width: 100%;
-    min-width: 0px;
-}
-
-#email-submit {
-    padding: 5px 0;
-    width: 100%;
-    margin: 0 10px 0 0;
 }
 
 #logistics {
@@ -180,7 +155,6 @@ hr {
     max-height: 100%;
 }
 
-
 #big-photo {
     background-image: url('img/big-photo.jpg');
     background-position: center;
@@ -205,15 +179,9 @@ hr {
     height: 350px;
 }
 
-#large-map-img {
-    display: none;
+#map-frame {
     height: 350px;
-    width: 1366px;
-    text-align: center;
-}
-
-#small-map-img {
-    display: none;
+    overflow: hidden;
 }
 
 #faq > div > ul {
@@ -259,11 +227,9 @@ hr {
     .navbar-fixed-top {
         margin: 0;
     }
-
     #header {
         padding: 0;
     }
-
     .nav-container {
         width: 100%;
     }
@@ -275,16 +241,9 @@ hr {
         font-size: 26px;
         text-shadow: 1px 1px 0 #fff;
     }
-
-    /* Switch from frame to image on mobile */
-    #small-map-img {
-        display: block;
-    }
-
     #map-frame {
         display: none;
     }
-
     /* Display text in nav */
     #facebookText, #twitterText {
         display: inline;
