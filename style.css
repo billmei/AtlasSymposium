@@ -179,7 +179,20 @@ hr {
     height: 350px;
 }
 
-#map-frame {
+#location {
+    position: relative;
+}
+.scroll-overlay {
+    /* This div prevents the user from scrolling the map */
+    display: block;
+    height: 350px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+.map-frame {
     height: 350px;
     overflow: hidden;
 }
