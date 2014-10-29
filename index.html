@@ -13,6 +13,7 @@
   <link rel="author" type="text/plain" href="humans.txt" />
 
   <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/bootstrap-xl.css" />
   <link rel="stylesheet" href="font/fontawesome.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -40,7 +41,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li id="facebookNav"><a href="http://facebook.com/AtlasSymposium" target="_blank"><i class="icon-facebook-sign icon-large"></i></a></li>
         <li id="twitterNav"><a href="http://twitter.com/AtlasSymposium" target="_blank"><i class="icon-twitter icon-large"></i></a></li>
-        <li><a href="#contactModal" data-toggle="modal" data-target="#contactModal">Contact</a></li>
+        <li><a href="#contact-modal" data-toggle="modal" data-target="#contact-modal">Contact</a></li>
       </ul>
     </div>
 
@@ -49,7 +50,7 @@
 
 <div class="container-fluid">
   <div id="header" class="row">
-    <div class="col-xs-12">
+    <div class="col-xs-12 col-lg-10 col-lg-offset-1 col-xl-8 col-xl-offset-2">
       <div class="row">
         <div class="col-xs-12">
           <h1 class="offscreen">Atlas Symposium</h1>
@@ -64,7 +65,7 @@
         </div>
         <div class="col-sm-4">
           <h3 class="cta-title">I'm a Student</h3>
-          <button type="button" class="btn btn-success btn-large register-button" data-toggle="modal" data-target="#student-modal">Student Sign-Up</button>
+          <a href="http://atlassymposium2014.eventbrite.com" class="btn btn-success btn-large register-button">Purchase Tickets</a>
           <hr>
           <h3 class="cta-title">I'm a Teacher</h3>
           <button type="button" class="btn btn-info btn-large register-button" data-toggle="modal" data-target="#teacher-modal">Teacher Sign-Up</button>
@@ -76,7 +77,7 @@
             Ontario&nbsp;Institute for Studies&nbsp;in&nbsp;Education<br/>
             252&nbsp;Bloor&nbsp;St&nbsp;W<br/>
             Toronto,&nbsp;ON&nbsp;M5S&nbsp;1V6<br/>
-            <br/><a href="#contactModal" data-toggle="modal" data-target="#contactModal">Contact Us</a>
+            <br/><a href="#contact-modal" data-toggle="modal" data-target="#contact-modal">Contact Us</a>
           </div>
         </div>
       </div>        
@@ -165,6 +166,8 @@
     </div>
     </div>
   </div>
+  
+  <hr/>
 
   <div class="row">
     <div class="col-sm-10 col-sm-offset-1">
@@ -236,165 +239,114 @@
   <div id="audience" class="row"></div>
   
   <div class="row">
-    <div class="col-sm-8 col-sm-offset-2">
+    <div class="col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3">
       <h2 class="big-quote">Get the honest answers to your questions</h2>
-      <p><button type="button" class="btn btn-success btn-large register-button" data-toggle="modal" data-target="#student-modal">Student Sign-Up</button></p>
-      <p><button type="button" class="btn btn-info btn-large register-button" data-toggle="modal" data-target="#teacher-modal">Teacher Sign-Up</button></p>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6">
+          <h3 class="cta-title">I'm a Student</h3>
+          <a href="http://atlassymposium2014.eventbrite.com" class="btn btn-success btn-large register-button">Purchase Tickets</a>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <h3 class="cta-title">I'm a Teacher</h3>
+          <button type="button" class="btn btn-info btn-large register-button" data-toggle="modal" data-target="#teacher-modal">Teacher Sign-Up</button>
+        </div>
+      </div>
       <p style="padding-bottom:60px;"></p>
     </div>
   </div>
   
   <div id="footer" class="row">
     <div class="col-xs-12">
-      <a href="#contactModal" data-toggle="modal" data-target="#contactModal">Contact Us</a>
+      <a href="#contact-modal" data-toggle="modal" data-target="#contact-modal">Contact Us</a>
       <p>Copyright 2011-2014 Atlas Access Inc.</p>
     </div>
   </div>
 </div> <!-- End content container -->
 
-<div id="student-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="student-modal" aria-hidden="true">
-  <div class="modal-header">
-    <button class="close" type="button" data-dismiss="modal" aria-hidden="true">x</button>
-    <h3>Sign-Up for Atlas Symposium 2014</h3>
-  </div>
-  <div class="modal-body">
-    <form action="//atlassymposium.us2.list-manage.com/subscribe/post?u=1ce577b697f10829b9ec5574f&amp;id=7c6f7d7924" method="post" id="modal-form" name="mc-embedded-subscribe-form" class="validate form-horizontal" target="_blank" novalidate>
-      <h4>Subscribe to our mailing list</h4>
-      <p>Be the first to know when registration opens! We'll also be updating you with more info as it becomes available.</p>
-      <div class="control-group">
-        <label for="mce-EMAIL" class="control-label">Email</label>
-        <div class="controls">
-        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="email@example.com">
-        </div>
+<div id="teacher-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="teacher-label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="teacher-label">Sign-Up for Atlas Symposium 2014</h4>
       </div>
-      <div class="control-group">
-        <label for="mce-FNAME" class="control-label">Full Name</label>
-        <div class="controls">
-        <input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="Full Name">
+      <form role="form" class="modal-body validate form-horizontal" action="//atlassymposium.us2.list-manage.com/subscribe/post?u=1ce577b697f10829b9ec5574f&amp;id=7c6f7d7924" method="post" id="modal-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+        <h4>Subscribe to our mailing list</h4>
+        <p>Be the first to know when registration opens! We'll also be updating you with more info as it becomes available.</p>
+        <div class="form-group">
+          <label for="mce-EMAIL" class="col-sm-3 control-label">Email</label>
+          <div class="col-sm-9">
+          <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="email@example.com">
+          </div>
         </div>
+        <div class="form-group">
+          <label for="mce-TNAME" class="col-sm-3 control-label">Full Name</label>
+          <div class="col-sm-9">
+          <input type="text" value="" name="TNAME" class=" form-control" id="mce-TNAME" placeholder="Full Name">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="mce-HSNAME" class="col-sm-3 control-label">High School</label>
+          <div class="col-sm-9">
+          <input type="text" value="" name="HSNAME" class=" form-control" id="mce-HSNAME" placeholder="Name of Your High School">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="mce-PHONE" class="col-sm-3 control-label">Phone Number</label>
+          <div class="col-sm-9">
+            <div class="row">
+              <div class="col-xs-6 col-sm-8"><input type="text" name="PHONE" class="form-control" value="" id="mce-PHONE" placeholder="###-###-####"></div>
+              <div class="col-xs-6 col-sm-4">
+                <div class="input-group">
+                  <div class="input-group-addon">ext</div>
+                  <input type="number" name="PHONEEXT" class="form-control" value="" id="mce-PHONEEXT" placeholder="###">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-9 col-sm-offset-3">
+            <p>What's the best way to contact you?</p>
+            <select name="CONTMETHOD" id="mce-CONTMETHOD">
+              <option value="Email" id="mce-CONTMETHOD-0">Email</option>
+              <option value="Phone" id="mce-CONTMETHOD-1">Phone</option>
+            </select>
+          </div>
+        </div>
+        <input type="radio" value="Teacher" name="ROLE" id="mce-ROLE-1" class="hidden" checked>
+        <div style="position: absolute; left: -5000px;"><input type="text" name="b_1ce577b697f10829b9ec5574f_7c6f7d7924" tabindex="-1" value=""></div>
+        <div class="form-group">
+          <div class="col-sm-9 col-sm-offset-3">
+          <input type="submit" value="Remind me via email" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary teacher-submit">
+          </div>
+        </div>
+      </form>
+      <div class="modal-footer">
+        <button class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
-      <div class="control-group">
-        <label for="mce-HSNAME" class="control-label">High School</label>
-        <div class="controls">
-        <input type="text" value="" name="HSNAME" class="" id="mce-HSNAME" placeholder="Name of Your High School">
-        </div>
-      </div>
-      <div class="control-group">
-        <label for="mce-TNAME" class="control-label">Teacher's Name</label>
-        <div class="controls">
-        <input type="text" value="" name="TNAME" class="" id="mce-TNAME" placeholder="Your Business Teacher's Name">
-        </div>
-      </div>
-      <div class="control-group">
-        <label for="mce-TEACHEMAIL" class="control-label">Teacher's Email</label>
-        <div class="controls">
-        <input type="email" value="" name="TEACHEMAIL" class="required email" id="mce-TEACHEMAIL" placeholder="Your Business Teacher's Email">
-        </div>
-      </div>
-      <div class="control-group">
-        <div class="controls">
-          <p>This year's symposium is organized around classes instead of individual students, which means <strong>we need your help!</strong></p>
-          <p>Would you be willing to ask your business teacher to bring you on a field trip?</p>
-          <select name="VOLUNTEER" class="" id="mce-VOLUNTEER">
-            <option value="select" selected="true" disabled>---- Select ----</option>
-            <option value="Yes">Yes!</option>
-            <option value="Maybe">Not now, but I'll consider it later.</option>
-            <option value="No">No</option>
-          </select>
-        </div>
-      </div>
-      <input type="radio" value="Student" name="ROLE" id="mce-ROLE-0" class="hidden" checked>
-      <div class="offscreen"><input type="text" name="b_1ce577b697f10829b9ec5574f_7c6f7d7924" tabindex="-1" value=""></div>
-      <div class="control-group">
-        <div class="controls">
-        <input type="submit" value="Remind me via email" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">
-        </div>
-      </div>
-    </form>
-  </div>
-  <div class="modal-footer">
-    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-  </div>
-</div>
-
-<div id="teacher-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="teacher-modal" aria-hidden="true">
-  <div class="modal-header">
-    <button class="close" type="button" data-dismiss="modal" aria-hidden="true">x</button>
-    <h3>Sign-Up for Atlas Symposium 2014</h3>
-  </div>
-  <div class="modal-body">
-    <form action="//atlassymposium.us2.list-manage.com/subscribe/post?u=1ce577b697f10829b9ec5574f&amp;id=7c6f7d7924" method="post" id="modal-form" name="mc-embedded-subscribe-form" class="validate form-horizontal" target="_blank" novalidate>
-      <h4>Subscribe to our mailing list</h4>
-      <p>Be the first to know when registration opens! We'll also be updating you with more info as it becomes available.</p>
-      <div class="control-group">
-        <label for="mce-EMAIL" class="control-label">Email</label>
-        <div class="controls">
-        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="email@example.com">
-        </div>
-      </div>
-      <div class="control-group">
-        <label for="mce-TNAME" class="control-label">Full Name</label>
-        <div class="controls">
-        <input type="text" value="" name="TNAME" class="" id="mce-TNAME" placeholder="Full Name">
-        </div>
-      </div>
-      <div class="control-group">
-        <label for="mce-HSNAME" class="control-label">High School</label>
-        <div class="controls">
-        <input type="text" value="" name="HSNAME" class="" id="mce-HSNAME" placeholder="Name of Your High School">
-        </div>
-      </div>
-      <div class="control-group">
-        <label for="mce-PHONE" class="control-label">Phone Number</label>
-        <div class="controls">
-        <input type="text" name="PHONE" class="input-medium" value="" id="mce-PHONE" placeholder="###-###-####">
-        <div class="input-prepend">
-          <span class="add-on">ext</span>
-          <input type="number" name="PHONEEXT" class="input-mini" value="" id="mce-PHONEEXT" placeholder="###">
-        </div>
-        </div>
-      </div>
-      <div class="control-group">
-        <div class="controls">
-          <p>What's the best way to contact you?</p>
-          <select name="CONTMETHOD" id="mce-CONTMETHOD">
-            <option value="Email" id="mce-CONTMETHOD-0">Email</option>
-            <option value="Phone" id="mce-CONTMETHOD-1">Phone</option>
-          </select>
-        </div>
-      </div>
-      <input type="radio" value="Teacher" name="ROLE" id="mce-ROLE-1" class="hidden" checked>
-      <div style="position: absolute; left: -5000px;"><input type="text" name="b_1ce577b697f10829b9ec5574f_7c6f7d7924" tabindex="-1" value=""></div>
-      <div class="control-group">
-        <div class="controls">
-        <input type="submit" value="Remind me via email" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary teacher-submit">
-        </div>
-      </div>
-    </form>
-  </div>
-  <div class="modal-footer">
-    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    </div>
   </div>
 </div>
 
-<div id="contactModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="contactModal" aria-hidden="true">
-  <div class="modal-header">
-    <button class="close" type="button" data-dismiss="modal" aria-hidden="true">x</button>
-    <h3>Contact Us</h3>
-  </div>
-  <div class="modal-body">
-    <p>
-      For all inquiries, the best way to reach us is via email:<br/>
-      <a href="mailto:team@atlassymposium.org" class="aboutlink">team@atlassymposium.org</a><br/><br/>
-      We also answer questions on Twitter:<br/>
-      <a href="http://twitter.com/AtlasSymposium" class="aboutlink" target="_blank">@AtlasSymposium</a><br/><br/>
-      We reply to all messages within 2-3 business days.<br/>
-      Thanks for your interest in the Atlas Symposium!
-    </p>
-  </div>
-  <div class="modal-footer">
-    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-  </div>
+<div id="contact-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="contact-label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="contact-label">Contact Us</h4>
+      </div>
+      <div class="modal-body">
+        <p>For all inquiries, the best way to reach us is via email:<br/><a href="mailto:team@atlassymposium.org" class="aboutlink">team@atlassymposium.org</a></p>
+        <p>We also answer questions on Twitter:<br/><a href="http://twitter.com/AtlasSymposium" class="aboutlink" target="_blank">@AtlasSymposium</a></p>
+        <p>We reply to all messages within 2-3 business days.</p>
+        <p>Thanks for your interest in the Atlas Symposium!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>  
 </div>
 
 <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
