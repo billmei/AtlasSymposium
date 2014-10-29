@@ -12,404 +12,401 @@
 
   <link rel="author" type="text/plain" href="humans.txt" />
 
-  <link rel="stylesheet" href="bootstrap.min.css" />
-  <link rel="stylesheet" href="bootstrap-responsive.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="font/fontawesome.css" />
-  <link rel="stylesheet" href="style.css" />
-  <script>
-    // appends a JS class to everything when javascript is enabled.
-    document.getElementsByTagName('html')[0].className += 'js';
-  </script>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body data-spy="scroll" data-target=".nav-collapse">
-  <div class="container-fluid">
-    <div class="navbar navbar-fixed-top navbar-inverse">
-      <div class="navbar-inner">
-        <div class="nav-container">
-          <!-- Responsive Navbar -->
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
 
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li><a href="#about">About</a></li>
-              <li><a href="#speakers">Speakers</a></li>
-              <li><a href="#sponsors">Sponsors</a></li>
-              <li><a href="#location">Location</a></li>
-              <li><a href="#faq">F.A.Q.</a></li>
-            </ul>
-          <ul class="nav pull-right">
-            <li id="facebookNav"><a href="http://facebook.com/AtlasSymposium" target="_blank"><i class="icon-facebook-sign icon-large"></i></a></li>
-            <li id="twitterNav"><a href="http://twitter.com/AtlasSymposium" target="_blank"><i class="icon-twitter icon-large"></i></a></li>
-            <li><a href="#contactModal" data-toggle="modal" data-target="#contactModal">Contact</a></li>
-          </ul>
-          </div>
-        </div>
-        
-      </div>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
     </div>
 
-    <div id="header" class="row-fluid">
-      <div class="span10 offset1">
-        <h2 class="big-quote">The best place to get information on universities</h2>
-        <div class="span4">
+    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#speakers">Speakers</a></li>
+        <li><a href="#sponsors">Sponsors</a></li>
+        <li><a href="#location">Location</a></li>
+        <li><a href="#faq">F.A.Q.</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li id="facebookNav"><a href="http://facebook.com/AtlasSymposium" target="_blank"><i class="icon-facebook-sign icon-large"></i></a></li>
+        <li id="twitterNav"><a href="http://twitter.com/AtlasSymposium" target="_blank"><i class="icon-twitter icon-large"></i></a></li>
+        <li><a href="#contactModal" data-toggle="modal" data-target="#contactModal">Contact</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div id="header" class="row">
+    <div class="col-xs-12">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1 class="offscreen">Atlas Symposium</h1>
+          <h2 class="big-quote">The best place to get information on universities</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
           <img id="main-logo" src="img/main-logo.png" alt="Atlas Symposium" />
-          <a href="http://facebook.com/AtlasSymposium" target="_blank" class="btn btn-mini"><i class="icon-facebook-sign"></i> Like us on Facebook</a>
-          <a href="http://twitter.com/AtlasSymposium" target="_blank" class="btn btn-mini"><i class="icon-twitter"></i> Follow @AtlasSymposium</a>
+          <a href="http://facebook.com/AtlasSymposium" target="_blank" class="btn btn-default btn-xs"><i class="icon-facebook-sign"></i> Like us on Facebook</a>
+          <a href="http://twitter.com/AtlasSymposium" target="_blank" class="btn btn-default btn-xs"><i class="icon-twitter"></i> Follow @AtlasSymposium</a>
         </div>
-        <div class="span4">
-              <h3 class="cta-title">I'm a Student</h3>
-              <button type="button" class="btn btn-success btn-large register-button" data-toggle="modal" data-target="#student-modal">Student Sign-Up</button>
-              <hr>
-              <h3 class="cta-title">I'm a Teacher</h3>
-              <button type="button" class="btn btn-info btn-large register-button" data-toggle="modal" data-target="#teacher-modal">Teacher Sign-Up</button>
+        <div class="col-sm-4">
+          <h3 class="cta-title">I'm a Student</h3>
+          <button type="button" class="btn btn-success btn-large register-button" data-toggle="modal" data-target="#student-modal">Student Sign-Up</button>
+          <hr>
+          <h3 class="cta-title">I'm a Teacher</h3>
+          <button type="button" class="btn btn-info btn-large register-button" data-toggle="modal" data-target="#teacher-modal">Teacher Sign-Up</button>
         </div>
-        <div id="logistics" class="span3">
-          <strong>November 21, 2014</strong>
-          <strong>9:00&nbsp;AM to 3:30&nbsp;PM</strong>
-          Ontario&nbsp;Institute for Studies&nbsp;in&nbsp;Education<br/>
-          252&nbsp;Bloor&nbsp;St&nbsp;W<br/>
-          Toronto,&nbsp;ON&nbsp;M5S&nbsp;1V6<br/>
-          <br/><a href="#contactModal" data-toggle="modal" data-target="#contactModal">Contact Us</a>
-        </div>
-      </div>
-        <h1 class="offscreen">Atlas Symposium</h1>
-    </div>
-    
-    <div id="big-photo" class="row-fluid"></div>
-
-    <div class="row-fluid">
-      <div id="about" class="span6 offset3">
-        <h2>About</h2>
-        <p>Atlas Symposium is a debate in downtown Toronto between 3rd and 4th year students in the top undergraduate business programs in Canada to inform you on your university options.</p>
-        <p>Atlas Symposium breaks through the surface and gives you real answers to your questions. Questions relating to school culture, opportunity, and overall experience are answered by those with the best kind of expertise: current students of the schools themselves. From their honesty, you will learn about the best qualities of their schools. Just as important, you will learn the worst qualities of others.</p>
-        <p>We were founded in 2011 out of a desire for a less frustrating university selection experience. We strive to accomplish this by simplifying the decision-making process and bringing you the information you want and deserve in one convenient location.</p>
-      </div>
-    </div>
-    
-    <hr/>
-
-    <div class="row-fluid">
-      <div class="span10 offset1">
-        <!-- <h2 class="big-quote">&ldquo;Definitely not an opportunity to miss out on.&rdquo;</h2>
-        <p class="citation">~&nbsp;Ayesha Afridi, delegate at Atlas 2011</p> -->
-        <h2 class="big-quote">&ldquo;A fun yet educational and very informative evening.&rdquo;</h2>
-        <p class="citation">~&nbsp;Kulani Zwane, delegate at Atlas 2011</p>
-        <h2 class="big-quote">&ldquo;It's not easy to come by an opportunity like this&rdquo;</h2>
-        <p class="citation">~&nbsp;Shirley Zhu, delegate at Atlas 2011</p>
-      </div>
-    </div>
-
-    <div id="speaker-lineup" class="row-fluid"></div>
-
-    <div id="speakers" class="row-fluid">
-      <div class="span10 offset1">
-      <h2>Speakers</h2>
-      <ul class="thumbnails">
-        <li class="span3">
-          <img src="img/jeremy.jpg" alt="Jeremy De Mello"/>
-          <h3>Jeremy De Mello</h3>
-          <h4>Moderator</h4>
-          <p>Jeremy is the President of Marketing of Atlas Symposium. Double-majoring in political science and business, he knows how to manage a debate while reading the audience and asking the questions they want answered.</p>
-          <p>In his spare time, Jeremy enjoys cooking, swing dancing, and learning every possible superhero origin story.</p>
-        </li>
-        <li class="span3">
-          <img src="img/joyce.jpg" alt="Joyce Tan"/>
-          <h3>Joyce Tan</h3>
-          <h4>York / Schulich</h4>
-          <p>Joyce is in her last year of the iBBA program at Schulich, specializing in Accounting. She’s passionate about creating youth leaders and has led York University’s chapter of the world’s largest student run organization, AIESEC. This past summer, she interned at Procter &amp; Gamble in Finance/Accounting after spending a term on exchange and travelling around Europe.</p>
-          <p>In her free time, Joyce loves to eat, game, and play badminton.</p>
-        </li>
-        <li class="span3">
-          <img src="http://placehold.it/600x600&amp;text=Coming+Soon" alt="Student Panellist"/>
-          <h3>Coming Soon.</h3>
-          <h4>Western / Ivey</h4>
-        </li>
-        <li class="span3">
-          <img src="img/tia.jpg" alt="Tia Peric"/>
-          <h3>Tia Peric</h3>
-          <h4>Queen's / Commerce</h4>
-          <p>Tia is in her final year at Queen's University, completing a Bachelor of Commerce (Honours) and Bachelor of Arts (French Studies), and plans to work in the capital markets industry upon graduation. Following a semester abroad in Belgium, Tia participated in the summer internship program at CIBC World Markets in Debt Capital Markets. She has also been heavily involved in extracurricular activities across campus, serving in various positions including Chief Marketing Officer of the Queen's Commerce Society.</p>
-          <p>In her spare time, Tia enjoys reading, playing the piano, and travelling.</p>
-        </li>
-      </ul>
-      <ul class="thumbnails">
-        <li class="span3">
-          <img src="img/julia.jpg" alt="Julia Chen"/>
-          <h3>Julia Chen</h3>
-          <h4>Waterloo / <abbr id="SAF" title="School of Accounting and Finance">SAF</abbr></h4>
-          <p>Julia is a 4th year in the Biotechnology and Chartered Professional Accountancy program in the School of Accounting and Finance. Julia is the President of DECA U Ontario, which holds Canada's largest undergraduate business conference, and oversees chapters in 20 Ontario universities and colleges. She worked as a Staff Accountant in the Energy and Mining group in the Audit practice at KPMG Toronto for 4 co-op terms, is pursuing her CPA designation, and starting her Masters of Accounting in January.</p>
-          <p>Julia recently visited every country in South East Asia while on exchange in Singapore, and has worked for the past 3 years as a Residence Life Don.</p>
-        </li>
-        <li class="span3">
-          <img src="img/vincent.jpg" alt="Vincent Ho"/>
-          <h3>Vincent Ho</h3>
-          <h4>UofT / Rotman</h4>
-          <p>Vincent is a fourth-year student at Rotman Commerce completing an Honours Bachelor of Commerce (Accounting) with minors in Economics and Women &amp; Gender Studies. For the past two summers, Vincent has interned at KPMG and gained exposure in Audit, US Corporate Tax, and Campus Recruiting. On campus, Vincent has been the President of the Rotman Commerce Pride Alliance, and now Co-Chairs the Lead with Pride Leadership Conference, among many other things.</p>
-          <p>Through UofT, Vincent has traveled to Japan (twice!) and Germany for coursework and has definitely caught a travel bug. In his spare time he enjoys playing volleyball and running.</p>
-        </li>
-        <li class="span3">
-          <img src="img/nico.jpg" alt="Nicolas Muniz-Saavedra"/>
-          <h3>Nicolas Muniz-Saavedra</h3>
-          <h4>Ryerson / <abbr id="TRSM" title="Ted Rogers School of Management">TRSM</abbr></h4>
-          <p>Nicolas is a 3rd year Business-Management student studying Business-Law at TRSM. He is the founder of TROP: Ted-Rogers-Outreach-Program, which organizes undergraduate business students to go back to their own high-schools and share their TRSM experiences and why they chose Ryerson. He is a member of the Law and Business Student Association, as well as the TOP 200 program.</p>
-          <p>Nicolas plans on pursuing a career in corporate law. He’s an avid reader in self-development as well as an outdoorsman.</p>
-        </li>
-      </ul>
-      </div>
-    </div>
-
-    <div class="row-fluid">
-      <div class="span10 offset1">
-        <h2 class="big-quote">&ldquo;I went to most of the Open Days of the universities I was interested in, but the <span class="shadow-emphasis">Atlas Symposium was really unique</span>, [...] which gave me a whole new enlightened perspective.&rdquo;</h2>
-        <p class="citation">~&nbsp;Kulani Zwane, delegate at Atlas 2011</p>
-      </div>
-    </div>
-
-    <div id="laptop-computer" class="row-fluid"></div>
-
-    <div id="sponsors" class="row-fluid">
-      <div class="span8 offset2">
-      <h2>Sponsors</h2>
-        <h3>Participating Sponsors</h3>
-        <ul class="thumbnails">
-          <li class="span6">
-            <img src="img/sun-life-logo.png" alt="Sun Life Financial">
-          </li>
-        </ul>
-        <h3>Supporting Sponsors</h3>
-        <ul class="thumbnails">
-          <li class="span6">
-            <img src="img/utba-logo.png" alt="University of Toronto Business Association">
-          </li>
-        </ul>
-      </div>
-    </div>
-    
-    <hr/>
-
-    <div id="location" class="row-fluid">
-      <div class="span4 offset5">
-        <h2>Location</h2>
-      </div>
-      <a href="https://www.google.com/maps/place/Ontario+Institute+for+Studies+in+Education/@43.668015,-79.398356,17z/data=!3m1!4b1!4m2!3m1!1s0x882b2a3c00d08207:0x8ffb3b5d6e709b74" class="scroll-overlay" target="_blank"></a>
-      <iframe class="map-frame" width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2886.0459099716136!2d-79.39835599999999!3d43.668015!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2a3c00d08207%3A0x8ffb3b5d6e709b74!2sOntario+Institute+for+Studies+in+Education!5e0!3m2!1sen!2s!4v1411503117939"></iframe>
-    </div>
-
-    <div id="faq" class="row-fluid">
-      <div class="span6 offset3">
-        <h2>F.A.Q.</h2>
-          <ul>
-            <li>
-              <p>Q: Why should I attend Atlas Symposium?</p>
-              <p>A: You're spending the next four years of your life there, you want to be informed about where you will be going. Students, especially those representing their school just because they want to, will answer your questions honestly and tell the hard truths. This is the purest example of students helping other students.</p>
-            </li>
-            <li>
-              <p>Q: What schools are represented?</p>
-              <p>A: Atlas Symposium will be hosting student panellists from: the Schulich School of Business (York University); Queen’s Commerce (Queen’s University); the Waterloo School of Accounting &amp; Finance (University of Waterloo); Rotman Commerce (University of Toronto); and the Richard Ivey School of Business (Western University).</p>
-            </li>
-            <li>
-              <p>Q: Why did you choose November 21th as opposed to any other date?</p>
-              <p>A: This date was not chosen arbitrarily. With certain competitions, sporting events, and open houses being held in the later part of the month, we wanted to make sure students would not have to make the tough decision of missing something. As former secondary students ourselves, we understand the difficulty of this choice and sought to eliminate it altogether.</p>
-            </li>
-            <li>
-              <p>Q: How are panellists selected?</p>
-              <p>A: Panellists are selected based on strong and consistent academic achievement, as well as their ability to find meaningful summer employment. These criteria are to ensure that every school is represented by the best it has to offer, ensuring a standard of excellence across the panellists.</p>
-            </li>
-            <li>
-              <p>Q: What do I get for $15?</p>
-              <p>A: Most of this goes toward lunch! In addition, the information your learn at Atlas Symposium will save you money later on. This is because the insights gained from the panellists will almost certainly lead you to apply to only one or two schools rather than the full five you were inclined to apply to initially. This will allow you to save money on your OUAC university selection application, as well as saving time and money from not having travel to every school's campus.</p>
-            </li>
-            <li>
-              <p>Q: Does your conference just cater to students interested in business?</p>
-              <p>A: Primarily, yes. However, the overall insights on each school are valuable to students interested in post-secondary education in general.</p>
-            </li>
-          </ul>
-      </div>
-    </div>
-
-    <div id="audience" class="row-fluid"></div>
-    
-    <div class="row-fluid">
-      <div class="span8 offset2">
-        <h2 class="big-quote">Get the honest answers to your questions</h2>
-        <div class="row-fluid">
-          <div class="span6">
-            <button type="button" class="btn btn-success btn-large register-button" data-toggle="modal" data-target="#student-modal">Student Sign-Up</button>
-          </div>
-          <div class="span6">
-            <button type="button" class="btn btn-info btn-large register-button" data-toggle="modal" data-target="#teacher-modal">Teacher Sign-Up</button>
+        <div class="col-sm-4">
+          <div id="logistics" class="span3">
+            <strong>November 21, 2014</strong>
+            <strong>9:00&nbsp;AM to 3:30&nbsp;PM</strong>
+            Ontario&nbsp;Institute for Studies&nbsp;in&nbsp;Education<br/>
+            252&nbsp;Bloor&nbsp;St&nbsp;W<br/>
+            Toronto,&nbsp;ON&nbsp;M5S&nbsp;1V6<br/>
+            <br/><a href="#contactModal" data-toggle="modal" data-target="#contactModal">Contact Us</a>
           </div>
         </div>
-        <p style="padding-bottom:60px;"></p>
-      </div>
-    </div>
-
-  </div> <!-- End content container -->
-
-  <div id="student-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="student-modal" aria-hidden="true">
-    <div class="modal-header">
-      <button class="close" type="button" data-dismiss="modal" aria-hidden="true">x</button>
-      <h3>Sign-Up for Atlas Symposium 2014</h3>
-    </div>
-    <div class="modal-body">
-      <form action="//atlassymposium.us2.list-manage.com/subscribe/post?u=1ce577b697f10829b9ec5574f&amp;id=7c6f7d7924" method="post" id="modal-form" name="mc-embedded-subscribe-form" class="validate form-horizontal" target="_blank" novalidate>
-        <h4>Subscribe to our mailing list</h4>
-        <p>Be the first to know when registration opens! We'll also be updating you with more info as it becomes available.</p>
-        <div class="control-group">
-          <label for="mce-EMAIL" class="control-label">Email</label>
-          <div class="controls">
-          <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="email@example.com">
-          </div>
-        </div>
-        <div class="control-group">
-          <label for="mce-FNAME" class="control-label">Full Name</label>
-          <div class="controls">
-          <input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="Full Name">
-          </div>
-        </div>
-        <div class="control-group">
-          <label for="mce-HSNAME" class="control-label">High School</label>
-          <div class="controls">
-          <input type="text" value="" name="HSNAME" class="" id="mce-HSNAME" placeholder="Name of Your High School">
-          </div>
-        </div>
-        <div class="control-group">
-          <label for="mce-TNAME" class="control-label">Teacher's Name</label>
-          <div class="controls">
-          <input type="text" value="" name="TNAME" class="" id="mce-TNAME" placeholder="Your Business Teacher's Name">
-          </div>
-        </div>
-        <div class="control-group">
-          <label for="mce-TEACHEMAIL" class="control-label">Teacher's Email</label>
-          <div class="controls">
-          <input type="email" value="" name="TEACHEMAIL" class="required email" id="mce-TEACHEMAIL" placeholder="Your Business Teacher's Email">
-          </div>
-        </div>
-        <div class="control-group">
-          <div class="controls">
-            <p>This year's symposium is organized around classes instead of individual students, which means <strong>we need your help!</strong></p>
-            <p>Would you be willing to ask your business teacher to bring you on a field trip?</p>
-            <select name="VOLUNTEER" class="" id="mce-VOLUNTEER">
-              <option value="select" selected="true" disabled>---- Select ----</option>
-              <option value="Yes">Yes!</option>
-              <option value="Maybe">Not now, but I'll consider it later.</option>
-              <option value="No">No</option>
-            </select>
-          </div>
-        </div>
-        <input type="radio" value="Student" name="ROLE" id="mce-ROLE-0" class="hidden" checked>
-        <div class="offscreen"><input type="text" name="b_1ce577b697f10829b9ec5574f_7c6f7d7924" tabindex="-1" value=""></div>
-        <div class="control-group">
-          <div class="controls">
-          <input type="submit" value="Remind me via email" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">
-          </div>
-        </div>
-      </form>
-    </div>
-    <div class="modal-footer">
-      <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-    </div>
-  </div>
-
-  <div id="teacher-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="teacher-modal" aria-hidden="true">
-    <div class="modal-header">
-      <button class="close" type="button" data-dismiss="modal" aria-hidden="true">x</button>
-      <h3>Sign-Up for Atlas Symposium 2014</h3>
-    </div>
-    <div class="modal-body">
-      <form action="//atlassymposium.us2.list-manage.com/subscribe/post?u=1ce577b697f10829b9ec5574f&amp;id=7c6f7d7924" method="post" id="modal-form" name="mc-embedded-subscribe-form" class="validate form-horizontal" target="_blank" novalidate>
-        <h4>Subscribe to our mailing list</h4>
-        <p>Be the first to know when registration opens! We'll also be updating you with more info as it becomes available.</p>
-        <div class="control-group">
-          <label for="mce-EMAIL" class="control-label">Email</label>
-          <div class="controls">
-          <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="email@example.com">
-          </div>
-        </div>
-        <div class="control-group">
-          <label for="mce-TNAME" class="control-label">Full Name</label>
-          <div class="controls">
-          <input type="text" value="" name="TNAME" class="" id="mce-TNAME" placeholder="Full Name">
-          </div>
-        </div>
-        <div class="control-group">
-          <label for="mce-HSNAME" class="control-label">High School</label>
-          <div class="controls">
-          <input type="text" value="" name="HSNAME" class="" id="mce-HSNAME" placeholder="Name of Your High School">
-          </div>
-        </div>
-        <div class="control-group">
-          <label for="mce-PHONE" class="control-label">Phone Number</label>
-          <div class="controls">
-          <input type="text" name="PHONE" class="input-medium" value="" id="mce-PHONE" placeholder="###-###-####">
-          <div class="input-prepend">
-            <span class="add-on">ext</span>
-            <input type="number" name="PHONEEXT" class="input-mini" value="" id="mce-PHONEEXT" placeholder="###">
-          </div>
-          </div>
-        </div>
-        <div class="control-group">
-          <div class="controls">
-            <p>What's the best way to contact you?</p>
-            <select name="CONTMETHOD" id="mce-CONTMETHOD">
-              <option value="Email" id="mce-CONTMETHOD-0">Email</option>
-              <option value="Phone" id="mce-CONTMETHOD-1">Phone</option>
-            </select>
-          </div>
-        </div>
-        <input type="radio" value="Teacher" name="ROLE" id="mce-ROLE-1" class="hidden" checked>
-        <div style="position: absolute; left: -5000px;"><input type="text" name="b_1ce577b697f10829b9ec5574f_7c6f7d7924" tabindex="-1" value=""></div>
-        <div class="control-group">
-          <div class="controls">
-          <input type="submit" value="Remind me via email" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary teacher-submit">
-          </div>
-        </div>
-      </form>
-    </div>
-    <div class="modal-footer">
-      <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-    </div>
-  </div>
-
-  <div id="contactModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="contactModal" aria-hidden="true">
-    <div class="modal-header">
-      <button class="close" type="button" data-dismiss="modal" aria-hidden="true">x</button>
-      <h3>Contact Us</h3>
-    </div>
-    <div class="modal-body">
-      <p>
-        For all inquiries, the best way to reach us is via email:<br/>
-        <a href="mailto:team@atlassymposium.org" class="aboutlink">team@atlassymposium.org</a><br/><br/>
-        We also answer questions on Twitter:<br/>
-        <a href="http://twitter.com/AtlasSymposium" class="aboutlink" target="_blank">@AtlasSymposium</a><br/><br/>
-        We reply to all messages within 2-3 business days.<br/>
-        Thanks for your interest in the Atlas Symposium!
-      </p>
-    </div>
-    <div class="modal-footer">
-      <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      </div>        
     </div>
   </div>
   
-  <div id="footer" class="row-fluid">
-    <a href="#contactModal" data-toggle="modal" data-target="#contactModal">Contact Us</a>
-    <p>Copyright 2011-2014 Atlas Access Inc.</p>
+  <div id="big-photo" class="row"></div>
+
+  <div class="row">
+    <div id="about" class="col-sm-6 col-sm-offset-3">
+      <h2>About</h2>
+      <p>Atlas Symposium is a debate in downtown Toronto between 3rd and 4th year students in the top undergraduate business programs in Canada to inform you on your university options.</p>
+      <p>Atlas Symposium breaks through the surface and gives you real answers to your questions. Questions relating to school culture, opportunity, and overall experience are answered by those with the best kind of expertise: current students of the schools themselves. From their honesty, you will learn about the best qualities of their schools. Just as important, you will learn the worst qualities of others.</p>
+      <p>We were founded in 2011 out of a desire for a less frustrating university selection experience. We strive to accomplish this by simplifying the decision-making process and bringing you the information you want and deserve in one convenient location.</p>
+    </div>
   </div>
   
-  <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
+  <hr/>
 
-  <script>
-    var _gaq=[['_setAccount','UA-10730961-9'],['_trackPageview']];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-1">
+      <!-- <h2 class="big-quote">&ldquo;Definitely not an opportunity to miss out on.&rdquo;</h2>
+      <p class="citation">~&nbsp;Ayesha Afridi, delegate at Atlas 2011</p> -->
+      <h2 class="big-quote">&ldquo;A fun yet educational and very informative evening.&rdquo;</h2>
+      <p class="citation">~&nbsp;Kulani Zwane, delegate at Atlas 2011</p>
+      <h2 class="big-quote">&ldquo;It's not easy to come by an opportunity like this&rdquo;</h2>
+      <p class="citation">~&nbsp;Shirley Zhu, delegate at Atlas 2011</p>
+    </div>
+  </div>
+
+  <div id="speaker-lineup" class="row"></div>
+
+  <div id="speakers" class="row">
+    <div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
+    <h2>Speakers</h2>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-lg-4">
+        <img src="img/jeremy.jpg" alt="Jeremy De Mello"/>
+        <h3>Jeremy De Mello</h3>
+        <h4>Moderator</h4>
+        <p>Jeremy is the President of Marketing of Atlas Symposium. Double-majoring in political science and business, he knows how to manage a debate while reading the audience and asking the questions they want answered.</p>
+        <p>In his spare time, Jeremy enjoys cooking, swing dancing, and learning every possible superhero origin story.</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-lg-4">
+        <img src="img/joyce.jpg" alt="Joyce Tan"/>
+        <h3>Joyce Tan</h3>
+        <h4>York / Schulich</h4>
+        <p>Joyce is in her last year of the iBBA program at Schulich, specializing in Accounting. She’s passionate about creating youth leaders and has led York University’s chapter of the world’s largest student run organization, AIESEC. This past summer, she interned at Procter &amp; Gamble in Finance/Accounting after spending a term on exchange and travelling around Europe.</p>
+        <p>In her free time, Joyce loves to eat, game, and play badminton.</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-lg-4">
+        <img src="img/tia.jpg" alt="Tia Peric"/>
+        <h3>Tia Peric</h3>
+        <h4>Queen's / Commerce</h4>
+        <p>Tia is in her final year at Queen's University, completing a Bachelor of Commerce (Honours) and Bachelor of Arts (French Studies), and plans to work in the capital markets industry upon graduation. Following a semester abroad in Belgium, Tia participated in the summer internship program at CIBC World Markets in Debt Capital Markets. She has also been heavily involved in extracurricular activities across campus, serving in various positions including Chief Marketing Officer of the Queen's Commerce Society.</p>
+        <p>In her spare time, Tia enjoys reading, playing the piano, and travelling.</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-lg-4">
+        <img src="http://placehold.it/600x600&amp;text=Coming+Soon" alt="Student Panellist"/>
+        <h3>Coming Soon</h3>
+        <h4>Western / Ivey</h4>
+      </div>
+      <div class="clearfix visible-sm visible-md"></div>
+      <div class="col-xs-12 col-sm-6 col-lg-4">
+        <img src="img/julia.jpg" alt="Julia Chen"/>
+        <h3>Julia Chen</h3>
+        <h4>Waterloo / <abbr id="SAF" title="School of Accounting and Finance">SAF</abbr></h4>
+        <p>Julia is a 4th year in the Biotechnology and Chartered Professional Accountancy program in the School of Accounting and Finance. Julia is the President of DECA U Ontario, which holds Canada's largest undergraduate business conference, and oversees chapters in 20 Ontario universities and colleges. She worked as a Staff Accountant in the Energy and Mining group in the Audit practice at KPMG Toronto for 4 co-op terms, is pursuing her CPA designation, and starting her Masters of Accounting in January.</p>
+        <p>Julia recently visited every country in South East Asia while on exchange in Singapore, and has worked for the past 3 years as a Residence Life Don.</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-lg-4">
+        <img src="img/vincent.jpg" alt="Vincent Ho"/>
+        <h3>Vincent Ho</h3>
+        <h4>UofT / Rotman</h4>
+        <p>Vincent is a fourth-year student at Rotman Commerce completing an Honours Bachelor of Commerce (Accounting) with minors in Economics and Women &amp; Gender Studies. For the past two summers, Vincent has interned at KPMG and gained exposure in Audit, US Corporate Tax, and Campus Recruiting. On campus, Vincent has been the President of the Rotman Commerce Pride Alliance, and now Co-Chairs the Lead with Pride Leadership Conference, among many other things.</p>
+        <p>Through UofT, Vincent has traveled to Japan (twice!) and Germany for coursework and has definitely caught a travel bug. In his spare time he enjoys playing volleyball and running.</p>
+      </div>
+      <div class="clearfix visible-sm visible-md visible-lg"></div>
+      <div class="col-xs-12 col-sm-6 col-lg-4">
+        <img src="img/nico.jpg" alt="Nicolas Muniz-Saavedra"/>
+        <h3>Nicolas Muniz-Saavedra</h3>
+        <h4>Ryerson / <abbr id="TRSM" title="Ted Rogers School of Management">TRSM</abbr></h4>
+        <p>Nicolas is a 3rd year Business-Management student studying Business-Law at TRSM. He is the founder of TROP: Ted-Rogers-Outreach-Program, which organizes undergraduate business students to go back to their own high-schools and share their TRSM experiences and why they chose Ryerson. He is a member of the Law and Business Student Association, as well as the TOP 200 program.</p>
+        <p>Nicolas plans on pursuing a career in corporate law. He’s an avid reader in self-development as well as an outdoorsman.</p>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-1">
+      <h2 class="big-quote">&ldquo;I went to most of the Open Days of the universities I was interested in, but the <span class="shadow-emphasis">Atlas Symposium was really unique</span>, [...] which gave me a whole new enlightened perspective.&rdquo;</h2>
+      <p class="citation">~&nbsp;Kulani Zwane, delegate at Atlas 2011</p>
+    </div>
+  </div>
+
+  <div id="laptop-computer" class="row"></div>
+
+  <div id="sponsors" class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+    <h2>Sponsors</h2>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <h3>Participating Sponsor</h3>
+          <img src="img/sun-life-logo.png" alt="Sun Life Financial">
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <h3>Supporting Sponsor</h3>
+          <img src="img/utba-logo.png" alt="University of Toronto Business Association">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <hr/>
+
+  <div id="location" class="row">
+    <div class="col-xs-12">
+      <h2>Location</h2>
+    </div>
+    <a href="https://www.google.com/maps/place/Ontario+Institute+for+Studies+in+Education/@43.668015,-79.398356,17z/data=!3m1!4b1!4m2!3m1!1s0x882b2a3c00d08207:0x8ffb3b5d6e709b74" class="scroll-overlay" target="_blank"></a>
+    <iframe class="map-frame" width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2886.0459099716136!2d-79.39835599999999!3d43.668015!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2a3c00d08207%3A0x8ffb3b5d6e709b74!2sOntario+Institute+for+Studies+in+Education!5e0!3m2!1sen!2s!4v1411503117939"></iframe>
+  </div>
+
+  <div id="faq" class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+      <h2>F.A.Q.</h2>
+        <ul>
+          <li>
+            <p>Q: Why should I attend Atlas Symposium?</p>
+            <p>A: You're spending the next four years of your life in university, you want to be informed about where you will be going. Students, especially those representing their school just because they want to, will answer your questions honestly and tell the hard truths. This is the purest example of students helping other students.</p>
+          </li>
+          <li>
+            <p>Q: What schools are represented?</p>
+            <p>A: Atlas Symposium will be hosting student panellists from: the Schulich School of Business (York University), Queen’s Commerce (Queen’s University), the Waterloo School of Accounting &amp; Finance (University of Waterloo), Rotman Commerce (University of Toronto), the Ted Rogers School of Management (Ryerson University), and the Richard Ivey School of Business (Western University).</p>
+          </li>
+          <li>
+            <p>Q: Why did you choose November 21th as opposed to any other date?</p>
+            <p>A: This date was not chosen arbitrarily. With certain competitions, sporting events, and open houses being held in the later part of the month, we wanted to make sure students would not have to make the tough decision of missing something. As former secondary students ourselves, we understand the difficulty of this choice and sought to eliminate it altogether.</p>
+          </li>
+          <li>
+            <p>Q: How are panellists selected?</p>
+            <p>A: Panellists are selected based on strong and consistent academic achievement, as well as their ability to find meaningful summer employment. These criteria are to ensure that every school is represented by the best it has to offer, ensuring a standard of excellence across the panellists.</p>
+          </li>
+          <li>
+            <p>Q: What do I get for $15?</p>
+            <p>A: Most of this goes toward lunch! In addition, the information your learn at Atlas Symposium will save you money later on. This is because the insights gained from the panellists will almost certainly lead you to apply to only one or two schools rather than the full five you were inclined to apply to initially. This will allow you to save money on your OUAC university selection application, as well as saving time and money from not having travel to every school's campus.</p>
+          </li>
+          <li>
+            <p>Q: Does your conference just cater to students interested in business?</p>
+            <p>A: Primarily, yes. However, the overall insights on each school are valuable to students interested in post-secondary education in general.</p>
+          </li>
+        </ul>
+    </div>
+  </div>
+
+  <div id="audience" class="row"></div>
+  
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <h2 class="big-quote">Get the honest answers to your questions</h2>
+      <p><button type="button" class="btn btn-success btn-large register-button" data-toggle="modal" data-target="#student-modal">Student Sign-Up</button></p>
+      <p><button type="button" class="btn btn-info btn-large register-button" data-toggle="modal" data-target="#teacher-modal">Teacher Sign-Up</button></p>
+      <p style="padding-bottom:60px;"></p>
+    </div>
+  </div>
+  
+  <div id="footer" class="row">
+    <div class="col-xs-12">
+      <a href="#contactModal" data-toggle="modal" data-target="#contactModal">Contact Us</a>
+      <p>Copyright 2011-2014 Atlas Access Inc.</p>
+    </div>
+  </div>
+</div> <!-- End content container -->
+
+<div id="student-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="student-modal" aria-hidden="true">
+  <div class="modal-header">
+    <button class="close" type="button" data-dismiss="modal" aria-hidden="true">x</button>
+    <h3>Sign-Up for Atlas Symposium 2014</h3>
+  </div>
+  <div class="modal-body">
+    <form action="//atlassymposium.us2.list-manage.com/subscribe/post?u=1ce577b697f10829b9ec5574f&amp;id=7c6f7d7924" method="post" id="modal-form" name="mc-embedded-subscribe-form" class="validate form-horizontal" target="_blank" novalidate>
+      <h4>Subscribe to our mailing list</h4>
+      <p>Be the first to know when registration opens! We'll also be updating you with more info as it becomes available.</p>
+      <div class="control-group">
+        <label for="mce-EMAIL" class="control-label">Email</label>
+        <div class="controls">
+        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="email@example.com">
+        </div>
+      </div>
+      <div class="control-group">
+        <label for="mce-FNAME" class="control-label">Full Name</label>
+        <div class="controls">
+        <input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="Full Name">
+        </div>
+      </div>
+      <div class="control-group">
+        <label for="mce-HSNAME" class="control-label">High School</label>
+        <div class="controls">
+        <input type="text" value="" name="HSNAME" class="" id="mce-HSNAME" placeholder="Name of Your High School">
+        </div>
+      </div>
+      <div class="control-group">
+        <label for="mce-TNAME" class="control-label">Teacher's Name</label>
+        <div class="controls">
+        <input type="text" value="" name="TNAME" class="" id="mce-TNAME" placeholder="Your Business Teacher's Name">
+        </div>
+      </div>
+      <div class="control-group">
+        <label for="mce-TEACHEMAIL" class="control-label">Teacher's Email</label>
+        <div class="controls">
+        <input type="email" value="" name="TEACHEMAIL" class="required email" id="mce-TEACHEMAIL" placeholder="Your Business Teacher's Email">
+        </div>
+      </div>
+      <div class="control-group">
+        <div class="controls">
+          <p>This year's symposium is organized around classes instead of individual students, which means <strong>we need your help!</strong></p>
+          <p>Would you be willing to ask your business teacher to bring you on a field trip?</p>
+          <select name="VOLUNTEER" class="" id="mce-VOLUNTEER">
+            <option value="select" selected="true" disabled>---- Select ----</option>
+            <option value="Yes">Yes!</option>
+            <option value="Maybe">Not now, but I'll consider it later.</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+      </div>
+      <input type="radio" value="Student" name="ROLE" id="mce-ROLE-0" class="hidden" checked>
+      <div class="offscreen"><input type="text" name="b_1ce577b697f10829b9ec5574f_7c6f7d7924" tabindex="-1" value=""></div>
+      <div class="control-group">
+        <div class="controls">
+        <input type="submit" value="Remind me via email" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+  </div>
+</div>
+
+<div id="teacher-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="teacher-modal" aria-hidden="true">
+  <div class="modal-header">
+    <button class="close" type="button" data-dismiss="modal" aria-hidden="true">x</button>
+    <h3>Sign-Up for Atlas Symposium 2014</h3>
+  </div>
+  <div class="modal-body">
+    <form action="//atlassymposium.us2.list-manage.com/subscribe/post?u=1ce577b697f10829b9ec5574f&amp;id=7c6f7d7924" method="post" id="modal-form" name="mc-embedded-subscribe-form" class="validate form-horizontal" target="_blank" novalidate>
+      <h4>Subscribe to our mailing list</h4>
+      <p>Be the first to know when registration opens! We'll also be updating you with more info as it becomes available.</p>
+      <div class="control-group">
+        <label for="mce-EMAIL" class="control-label">Email</label>
+        <div class="controls">
+        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="email@example.com">
+        </div>
+      </div>
+      <div class="control-group">
+        <label for="mce-TNAME" class="control-label">Full Name</label>
+        <div class="controls">
+        <input type="text" value="" name="TNAME" class="" id="mce-TNAME" placeholder="Full Name">
+        </div>
+      </div>
+      <div class="control-group">
+        <label for="mce-HSNAME" class="control-label">High School</label>
+        <div class="controls">
+        <input type="text" value="" name="HSNAME" class="" id="mce-HSNAME" placeholder="Name of Your High School">
+        </div>
+      </div>
+      <div class="control-group">
+        <label for="mce-PHONE" class="control-label">Phone Number</label>
+        <div class="controls">
+        <input type="text" name="PHONE" class="input-medium" value="" id="mce-PHONE" placeholder="###-###-####">
+        <div class="input-prepend">
+          <span class="add-on">ext</span>
+          <input type="number" name="PHONEEXT" class="input-mini" value="" id="mce-PHONEEXT" placeholder="###">
+        </div>
+        </div>
+      </div>
+      <div class="control-group">
+        <div class="controls">
+          <p>What's the best way to contact you?</p>
+          <select name="CONTMETHOD" id="mce-CONTMETHOD">
+            <option value="Email" id="mce-CONTMETHOD-0">Email</option>
+            <option value="Phone" id="mce-CONTMETHOD-1">Phone</option>
+          </select>
+        </div>
+      </div>
+      <input type="radio" value="Teacher" name="ROLE" id="mce-ROLE-1" class="hidden" checked>
+      <div style="position: absolute; left: -5000px;"><input type="text" name="b_1ce577b697f10829b9ec5574f_7c6f7d7924" tabindex="-1" value=""></div>
+      <div class="control-group">
+        <div class="controls">
+        <input type="submit" value="Remind me via email" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary teacher-submit">
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+  </div>
+</div>
+
+<div id="contactModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="contactModal" aria-hidden="true">
+  <div class="modal-header">
+    <button class="close" type="button" data-dismiss="modal" aria-hidden="true">x</button>
+    <h3>Contact Us</h3>
+  </div>
+  <div class="modal-body">
+    <p>
+      For all inquiries, the best way to reach us is via email:<br/>
+      <a href="mailto:team@atlassymposium.org" class="aboutlink">team@atlassymposium.org</a><br/><br/>
+      We also answer questions on Twitter:<br/>
+      <a href="http://twitter.com/AtlasSymposium" class="aboutlink" target="_blank">@AtlasSymposium</a><br/><br/>
+      We reply to all messages within 2-3 business days.<br/>
+      Thanks for your interest in the Atlas Symposium!
+    </p>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+  </div>
+</div>
+
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+<script>
+  var _gaq=[['_setAccount','UA-10730961-9'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
 
 </body>
 

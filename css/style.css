@@ -1,0 +1,250 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:700);
+
+/*
+
+Orange #f96a1b
+Blue   #44afd1
+Green  #bcde15
+
+*/
+
+body {
+  padding: 0;
+  background-color: #eee;
+}
+
+
+h2 {
+  margin-top: 20px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 22px;
+  color: #44AFD1;
+  line-height: 120%;
+}
+
+p {
+  font-size: 120%;
+  line-height: 130%;
+}
+
+#navRegister {
+  font-weight: bold;
+  color: #fff;
+}
+
+#navRegister:hover {
+  text-shadow: 0 0 4px #eee;
+}
+
+#header {
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+
+.offscreen {
+  position: absolute; left: -5000px;
+}
+
+#main-logo {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  max-width: 100%;
+}
+
+.icon-facebook-sign {
+  color: #3b5998;
+}
+
+.icon-twitter {
+  color: #00ACED;
+}
+
+#top-form {
+  margin: 0;
+}
+
+.cta-title {
+  text-align: center;
+}
+
+.register-button {
+  padding: 20px 0;
+  width: 100%;
+  font-size: 26px;
+  text-align: center;
+}
+
+.btn-success:hover {
+  box-shadow: 0 0 5px #5bb75b;
+}
+.btn-info:hover {
+  box-shadow: 0 0 5px #49afcd;
+}
+
+hr {
+  color: #999;
+  background-color: #999;
+  height: 1px;
+}
+
+#logistics {
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  background-color: #bbb;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+      border-radius: 10px;
+}
+
+#logistics strong {
+  display: block;
+  font-size: 24px;
+  text-shadow: 0 1px 0 #eee;
+}
+
+#logistics > a {
+  font-weight: bold;
+  color: #1240ab;
+}
+
+.big-quote {
+  text-align: center;
+  padding-bottom:20px;
+  color: #000;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 2px 3px 0 #fff;
+  line-height: 150%;
+}
+
+/* The person who said a testimonial */
+.citation {
+  text-align: center;
+  font-style: italic;
+  margin-top: -20px;
+  margin-bottom: 60px;
+}
+
+.shadow-emphasis {
+  text-shadow: 2px 2px 1px #44AFD1;
+}
+
+.modal-body {
+  max-height: 100%;
+}
+
+#big-photo {
+  background-image: url('../img/big-photo.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 350px;
+}
+
+#speaker-lineup {
+  background-image: url('../img/speaker-lineup.jpg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 350px;
+}
+
+#laptop-computer {
+  background-image: url('../img/laptop-computer.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 350px;
+}
+
+#speakers img, #sponsors img {
+  max-width: 300px;
+  width: 100%;
+}
+
+#location {
+  position: relative;
+}
+.scroll-overlay {
+  /* This div prevents the user from scrolling the map */
+  display: block;
+  height: 350px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+.map-frame {
+  height: 350px;
+  overflow: hidden;
+}
+
+#faq > div > ul {
+  list-style-type: none;
+}
+
+/* The first child is the "question" on each F.A.Q. item */
+#faq > div > ul > li p:first-child {
+  color: #44AFD1;
+  font-weight: bold;
+  margin-bottom: -1px;
+}
+
+#audience {
+  background-image: url('../img/audience.jpg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 350px;
+}
+
+#footer {
+  background-color: #000;
+  color: #eee;
+  padding: 4px 0 4px 0;
+}
+
+#footer a {
+  float: left;
+  padding: 0 20px;
+  display: inline;
+}
+
+#footer p {
+  float: right;
+  font-size: 14px;
+  padding: 0 20px;
+  display: inline;
+}
+
+@media (max-width: 480px) {
+  /* Make size for quotes smaller on mobile */
+  .big-quote {
+    font-size: 26px;
+    text-shadow: 1px 1px 0 #fff;
+  }
+  #map-frame {
+    display: none;
+  }
+  /* Display text in nav */
+  #facebookText, #twitterText {
+    display: inline;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  #speakers .col-xs-12 {
+    width: 330px;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+  }
+}
