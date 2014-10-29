@@ -24,19 +24,9 @@ h4 {
   color: #44AFD1;
   line-height: 120%;
 }
-
 p {
   font-size: 120%;
   line-height: 130%;
-}
-
-#navRegister {
-  font-weight: bold;
-  color: #fff;
-}
-
-#navRegister:hover {
-  text-shadow: 0 0 4px #eee;
 }
 
 #header {
