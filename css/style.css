@@ -175,8 +175,13 @@ hr {
   overflow: hidden;
 }
 
+#schedule table thead {
+  font-weight: bold;
+}
+
 #faq > div > ul {
   list-style-type: none;
+  padding-left: 0;
 }
 
 /* The first child is the "question" on each F.A.Q. item */
