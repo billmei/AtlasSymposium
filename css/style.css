@@ -156,6 +156,9 @@ hr {
   max-width: 300px;
   width: 100%;
 }
+#sponsors img.title-sponsor {
+  max-width: 600px;
+}
 
 #location {
   position: relative;
