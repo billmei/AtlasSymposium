@@ -1,4 +1,4 @@
-Atlas Symposium
+[Atlas Symposium](http://www.atlassymposium.org)
 ==============
 
 The respository contains the files for Atlas Symposium's public website.

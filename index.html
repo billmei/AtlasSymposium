@@ -66,7 +66,7 @@
         </div>
         <div class="col-sm-4">
           <h3 class="cta-title">I'm a Student</h3>
-          <a href="http://atlassymposium2014.eventbrite.com" class="btn btn-success btn-large register-button">Purchase Tickets</a>
+          <button type="button" class="btn btn-success btn-large register-button" data-toggle="modal" data-target="#student-modal">Purchase Tickets</button>
           <hr>
           <h3 class="cta-title">I'm a Teacher</h3>
           <button type="button" class="btn btn-info btn-large register-button" data-toggle="modal" data-target="#teacher-modal">Teacher Sign-Up</button>
@@ -322,7 +322,7 @@
       <div class="row">
         <div class="col-xs-12 col-sm-6">
           <h3 class="cta-title">I'm a Student</h3>
-          <a href="http://atlassymposium2014.eventbrite.com" class="btn btn-success btn-large register-button">Purchase Tickets</a>
+          <button type="button" class="btn btn-success btn-large register-button" data-toggle="modal" data-target="#student-modal">Purchase Tickets</button>
         </div>
         <div class="col-xs-12 col-sm-6">
           <h3 class="cta-title">I'm a Teacher</h3>
@@ -341,15 +341,75 @@
   </div>
 </div> <!-- End content container -->
 
+<div id="student-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="student-label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="student-label">Sorry! Atlas 2014 is sold out.</h4>
+      </div>
+      <form role="form" class="modal-body validate form-horizontal" action="//atlassymposium.us2.list-manage.com/subscribe/post?u=1ce577b697f10829b9ec5574f&amp;id=7c6f7d7924" method="post" id="modal-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+        <p>We've sold out this year, but if you sign up on our email list you'll be the first to know when registration opens next year! :)</p>
+        <div class="form-group">
+          <label for="mce-EMAIL" class="col-sm-3 control-label">Your Email</label>
+          <div class="col-sm-9">
+          <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="email@example.com">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="mce-FNAME" class="col-sm-3 control-label">Full Name</label>
+          <div class="col-sm-9">
+          <input type="text" value="" name="FNAME" class="form-control" id="mce-FNAME" placeholder="Full Name">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="mce-HSNAME" class="col-sm-3 control-label">High School</label>
+          <div class="col-sm-9">
+          <input type="text" value="" name="HSNAME" class="form-control" id="mce-HSNAME" placeholder="Name of Your High School">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="mce-TNAME" class="col-sm-3 control-label">Teacher's Name</label>
+          <div class="col-sm-9">
+          <input type="text" value="" name="TNAME" class="form-control" id="mce-TNAME" placeholder="Your Business Teacher's Name">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="mce-TEACHEMAIL" class="col-sm-3 control-label">Teacher's Email</label>
+          <div class="col-sm-9">
+          <input type="email" value="" name="TEACHEMAIL" class="email form-control" id="mce-TEACHEMAIL" placeholder="Your Business Teacher's Email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="mce-HSNAME" class="col-sm-3 control-label">High School</label>
+          <div class="col-sm-9">
+          <input type="text" value="" name="HSNAME" class="form-control" id="mce-HSNAME" placeholder="Name of Your High School">
+          </div>
+        </div>
+        <input type="radio" value="Student" name="ROLE" id="mce-ROLE-0" class="hidden" checked>
+        <div style="position: absolute; left: -5000px;"><input type="text" name="b_1ce577b697f10829b9ec5574f_7c6f7d7924" tabindex="-1" value=""></div>
+        <div class="form-group">
+          <div class="col-sm-9 col-sm-offset-3">
+          <input type="submit" value="Remind me via email" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">
+          </div>
+        </div>
+      </form>
+      <div class="modal-footer">
+        <button class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div id="teacher-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="teacher-label" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="teacher-label">Subscribe to our mailing list</h4>
+        <h4 class="modal-title" id="teacher-label">Sorry! Atlas 2014 is sold out.</h4>
       </div>
       <form role="form" class="modal-body validate form-horizontal" action="//atlassymposium.us2.list-manage.com/subscribe/post?u=1ce577b697f10829b9ec5574f&amp;id=7c6f7d7924" method="post" id="modal-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
-        <p>Be the first to know when registration opens! We'll also be updating you with more info as it becomes available.</p>
+        <p>We've sold out this year, but if you sign up on our email list you'll be the first to know when registration opens next year! :)</p>
         <div class="form-group">
           <label for="mce-EMAIL" class="col-sm-3 control-label">Email</label>
           <div class="col-sm-9">
