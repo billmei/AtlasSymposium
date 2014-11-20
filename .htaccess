@@ -7,3 +7,6 @@ ErrorDocument 500 http://www.atlassymposium.org/500.html
 RewriteEngine On
 RewriteCond %{HTTP_HOST} !^www\. [NC]
 RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+# Redirect /survey to the Google Doc
+RewriteRule ^survey$ https://docs.google.com/forms/d/1hDqZ5bcPaGairB0c-UFtf7cb6VSU4P9B6AlpNiPI2Sk/ [L,R=301,NC]
