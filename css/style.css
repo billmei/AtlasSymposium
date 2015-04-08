@@ -202,23 +202,10 @@ hr {
   height: 350px;
 }
 
-#footer {
+footer {
   background-color: #000;
   color: #eee;
-  padding: 4px 0 4px 0;
-}
-
-#footer a {
-  float: left;
-  padding: 0 20px;
-  display: inline;
-}
-
-#footer p {
-  float: right;
-  font-size: 14px;
-  padding: 0 20px;
-  display: inline;
+  padding: 0.5em 0;
 }
 
 @media (max-width: 480px) {
