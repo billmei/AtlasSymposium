@@ -1,4 +1,4 @@
-[Atlas Symposium](http://kortaggio.github.io/AtlasSymposium/)
+[Atlas Symposium](https://billmei.github.io/AtlasSymposium/)
 ==============
 
 The respository contains the files for Atlas Symposium's public website.
